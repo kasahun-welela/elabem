@@ -2,9 +2,11 @@
 import Link from "next/link";
 import React, { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
+import { usePathname } from "next/navigation";
 
 function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
 
   const toggleButton = () => {
     setIsOpen(!isOpen);
@@ -34,19 +36,26 @@ function NavBar() {
     <div className="w-full shadow-sm">
       {/* Desktop Navigation */}
       <div className="hidden md:flex justify-around items-center py-5 md:w-[80%] mx-auto">
-        <Link href="/" className="text-2xl font-bold text-primary">
+        <Link href="/" className={`text-2xl font-bold text-primary`}>
           Elabem Consultancy
         </Link>
         <ul className="flex justify-end gap-6">
           <li>
-            <Link href="/" className="hover:font-semibold hover:text-primary">
+            <Link
+              href="/"
+              className={`${
+                pathname === "/" ? "text-primary font-bold" : ""
+              } hover:font-semibold hover:text-primary`}
+            >
               Home
             </Link>
           </li>
           <li>
             <Link
               href="/about"
-              className="hover:font-semibold hover:text-primary"
+              className={`${
+                pathname === "/about" ? "text-primary font-bold" : ""
+              } hover:font-semibold hover:text-primary`}
             >
               About Us
             </Link>
@@ -54,7 +63,9 @@ function NavBar() {
           <li>
             <Link
               href="/scholarship"
-              className="hover:font-semibold hover:text-primary"
+              className={`${
+                pathname === "/scholarship" ? "text-primary font-bold" : ""
+              } hover:font-semibold hover:text-primary`}
             >
               Scholarship
             </Link>
@@ -62,7 +73,9 @@ function NavBar() {
           <li>
             <Link
               href="/contact-us"
-              className="hover:font-semibold hover:text-primary"
+              className={`${
+                pathname === "/contact-us" ? "text-primary font-bold" : ""
+              } hover:font-semibold hover:text-primary`}
             >
               Contact Us
             </Link>
@@ -105,7 +118,9 @@ function NavBar() {
               <li>
                 <Link
                   href="/"
-                  className="hover:font-semibold hover:text-primary"
+                  className={`${
+                    pathname === "/" ? "text-primary font-bold" : ""
+                  } hover:font-semibold hover:text-primary`}
                 >
                   Home
                 </Link>
@@ -113,7 +128,9 @@ function NavBar() {
               <li>
                 <Link
                   href="/about"
-                  className="hover:font-semibold hover:text-primary"
+                  className={`${
+                    pathname === "/about" ? "text-primary font-bold" : ""
+                  } hover:font-semibold hover:text-primary`}
                 >
                   About Us
                 </Link>
@@ -121,7 +138,9 @@ function NavBar() {
               <li>
                 <Link
                   href="/scholarship"
-                  className="hover:font-semibold hover:text-primary"
+                  className={`${
+                    pathname === "/scholarship" ? "text-primary font-bold" : ""
+                  } hover:font-semibold hover:text-primary`}
                 >
                   Scholarship
                 </Link>
@@ -129,7 +148,9 @@ function NavBar() {
               <li>
                 <Link
                   href="/contact-us"
-                  className="hover:font-semibold hover:text-primary"
+                  className={`${
+                    pathname === "/contact-us" ? "text-primary font-bold" : ""
+                  } hover:font-semibold hover:text-primary`}
                 >
                   Contact Us
                 </Link>
