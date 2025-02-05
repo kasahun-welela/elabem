@@ -1,5 +1,6 @@
 "use client";
 import { ContactUs } from "@/components/ContactUs";
+import SocialMedia from "@/components/SocialMedia";
 import { Card } from "@/components/ui/card";
 import Link from "next/link";
 
@@ -51,33 +52,7 @@ export default function page() {
               </p>
             </div>
           </div>
-          <div className="flex gap-3 justify-center items-center py-3">
-            <Link href=" https://t.me/elabemconsultancy" target="_blank">
-              <i className="ri-telegram-2-fill text-2xl bg-gray-200 rounded-full py-2 px-2 hover:text-primary"></i>
-            </Link>
-            <Link
-              href="https://www.instagram.com/elabemconsultancy"
-              target="_blank"
-            >
-              {" "}
-              <i className="ri-instagram-line text-2xl bg-gray-200 rounded-full py-2 px-2 hover:text-primary"></i>
-            </Link>
-            <Link href="#" target="_blank">
-              {" "}
-              <i className="ri-facebook-fill text-2xl bg-gray-200 rounded-full py-2 px-2 hover:text-primary"></i>
-            </Link>
-            <Link
-              href="https://www.tiktok.com/@elabemconsultancy"
-              target="_blank"
-            >
-              {" "}
-              <i className="ri-tiktok-fill text-2xl bg-gray-200 rounded-full py-2 px-2 hover:text-primary"></i>
-            </Link>
-            <Link href="https://www.youtube.com/@haileabtadele" target="_blank">
-              {" "}
-              <i className="ri-youtube-line text-2xl bg-gray-200 rounded-full py-2 px-2 hover:text-primary"></i>
-            </Link>
-          </div>
+          <SocialMedia />
         </div>
         <Card className="basis-1/2 max-w-md my-2">
           <ContactUs />
