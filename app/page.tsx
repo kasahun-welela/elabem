@@ -57,7 +57,7 @@ export default function Home() {
         <h1 className="text-primary text-center font-bold text-2xl">
           Why Choose Elabem
         </h1>
-        <div className="grid md:grid-cols-3 gap-3">
+        <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-3">
           {cardData.map((details: any, key) => (
             <Card className="max-w-sm" key={key}>
               <CardHeader className="text-center">
