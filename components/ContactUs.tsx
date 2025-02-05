@@ -15,6 +15,8 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
+import { Textarea } from "./ui/textarea";
+
 export function ContactUs() {
   const form = useForm<z.infer<typeof ContactUsSchema>>({
     resolver: zodResolver(ContactUsSchema),
@@ -24,15 +26,19 @@ export function ContactUs() {
   };
   return (
     <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-2  p-4">
+      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-2  p-4 ">
         <FormField
           control={form.control}
           name="fullname"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Username</FormLabel>
+              <FormLabel className="text-muted-foreground">Username</FormLabel>
               <FormControl>
-                <Input placeholder="Please enter Full name" {...field} />
+                <Input
+                  placeholder="Please enter Full name"
+                  className="placeholder:text-xs"
+                  {...field}
+                />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -43,9 +49,13 @@ export function ContactUs() {
           name="email"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Email</FormLabel>
+              <FormLabel className="text-muted-foreground">Email</FormLabel>
               <FormControl>
-                <Input placeholder="Please enter your email" {...field} />
+                <Input
+                  placeholder="Please enter your email"
+                  className="placeholder:text-xs"
+                  {...field}
+                />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -56,9 +66,15 @@ export function ContactUs() {
           name="phoneNumber"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Phone Number</FormLabel>
+              <FormLabel className="text-muted-foreground">
+                Phone Number
+              </FormLabel>
               <FormControl>
-                <Input placeholder="Please enter phone number" {...field} />
+                <Input
+                  placeholder="Please enter phone number"
+                  className="placeholder:text-xs"
+                  {...field}
+                />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -69,15 +85,19 @@ export function ContactUs() {
           name="message"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Message</FormLabel>
+              <FormLabel className="text-muted-foreground">Message</FormLabel>
               <FormControl>
-                <Input placeholder="your message ..." {...field} />
+                <Textarea
+                  placeholder="Type your message here."
+                  className="placeholder:text-xs"
+                  {...field}
+                />
               </FormControl>
               <FormMessage />
             </FormItem>
           )}
         />
-        <Button type="submit" className="max-w-sm">
+        <Button type="submit" className="w-full">
           Submit
         </Button>
       </form>
