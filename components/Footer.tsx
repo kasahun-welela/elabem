@@ -80,6 +80,7 @@ export default function Footer() {
       </div>
 
       <SocialMedia />
+      <hr className="text-white py-3 w-[80%] mx-auto" />
     </div>
   );
 }
