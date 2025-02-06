@@ -1,8 +1,6 @@
-"use client";
 import { ContactUs } from "@/components/ContactUs";
 import SocialMedia from "@/components/SocialMedia";
 import { Card } from "@/components/ui/card";
-import Link from "next/link";
 
 export default function page() {
   return (
