@@ -1,7 +1,7 @@
+import Hero from "@/components/Hero";
 import {
   Card,
   CardContent,
-  CardDescription,
   CardFooter,
   CardHeader,
   CardTitle,
@@ -53,7 +53,8 @@ export default function Home() {
 
   return (
     <>
-      <div className="w-[80%] mx-auto mt-24">
+      <div className="w-[80%] mx-auto mt-24 md:mt-3">
+        <Hero />
         <h1 className="text-primary text-center font-bold text-2xl">
           Why Choose Elabem
         </h1>
