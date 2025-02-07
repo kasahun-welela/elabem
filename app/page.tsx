@@ -53,9 +53,9 @@ export default function Home() {
 
   return (
     <>
+      <Hero />
       <div className="w-[80%] mx-auto mt-24 md:mt-3">
-        <Hero />
-        <h1 className="text-primary text-center font-bold text-2xl">
+        <h1 className="text-primary text-center font-bold text-2xl py-5">
           Why Choose Elabem
         </h1>
         <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-3">
