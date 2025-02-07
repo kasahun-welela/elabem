@@ -28,10 +28,15 @@ export default function Hero() {
     // </div>
 
     <div className="mt-20 md:mt-0 h-80 md:h-screen bg-[url('/hero2.png')] md:bg-cover flex flex-col justify-center  ">
-      <div className="md:ml-40 px-3">
-        <h1 className="md:max-w-[50%]  text-white text-2xl md:text-5xl font-extrabold">
+      <div className="md:ml-40 px-3 md:max-w-[50%] ">
+        <h1 className=" text-white text-2xl md:text-5xl font-extrabold">
           The future you imagine is closer than you think.
         </h1>
+        <p className="py-5 text-white md:text-xl">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam,
+        </p>
         <div className="space-x-2 ml-5">
           <Link
             href="/contact-us"
