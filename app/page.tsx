@@ -6,6 +6,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import Services from "@/components/Services";
 import Link from "next/link";
 
 export default function Home() {
@@ -77,6 +78,7 @@ export default function Home() {
           ))}
         </div>
       </div>
+      <Services />
     </>
   );
 }
