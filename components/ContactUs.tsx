@@ -24,7 +24,7 @@ export function ContactUs() {
   const form = useForm<z.infer<typeof ContactUsSchema>>({
     resolver: zodResolver(ContactUsSchema),
   });
-  const onSubmit = (values: z.infer<typeof ContactUsSchema>) => {
+  const onSubmit = async (values: z.infer<typeof ContactUsSchema>) => {
     setIsLoading(true);
     console.log("form values date ==", values);
     const templateParams = {
@@ -34,26 +34,24 @@ export function ContactUs() {
       email: values.email,
       message: values.message,
     };
-
-    emailjs
-      .send(
+    try {
+      await emailjs.send(
         process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID ?? "",
         process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID ?? "",
         templateParams,
         process.env.NEXT_PUBLIC_EMAILJS_USER_ID ?? ""
-      )
-      .then(
-        (result) => {
-          toast.success("Thank you for reaching us we will contact you soon  ");
-          console.log("Email sent successfully!", result.text);
-          setIsLoading(false);
-        },
-        (error) => {
-          toast.error("Unable to send the Mail please try again");
-          setIsLoading(false);
-          console.log("Failed to send email:", error);
-        }
       );
+      toast.success(
+        "Thank you for reaching out! We will get back to you soon."
+      );
+      console.log("Email sent successfully!");
+      form.reset();
+    } catch (error) {
+      toast.error("Unable to send the mail. Please try again.");
+      console.log("Failed to send email:", error);
+    } finally {
+      setIsLoading(false);
+    }
   };
   return (
     <Form {...form}>
