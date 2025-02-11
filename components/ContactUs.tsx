@@ -8,7 +8,6 @@ import { useForm } from "react-hook-form";
 import {
   Form,
   FormControl,
-  FormDescription,
   FormField,
   FormItem,
   FormLabel,
@@ -17,20 +16,16 @@ import {
 import { Input } from "@/components/ui/input";
 import { Textarea } from "./ui/textarea";
 import emailjs from "@emailjs/browser";
-
-interface templateParams {
-  to_name: string;
-  from_name: string;
-  phone: string;
-  email: string;
-  message: string;
-}
+import { toast } from "react-toastify";
+import { useState } from "react";
 
 export function ContactUs() {
+  const [isLoading, setIsLoading] = useState(false);
   const form = useForm<z.infer<typeof ContactUsSchema>>({
     resolver: zodResolver(ContactUsSchema),
   });
   const onSubmit = (values: z.infer<typeof ContactUsSchema>) => {
+    setIsLoading(true);
     console.log("form values date ==", values);
     const templateParams = {
       to_name: "Elabem Consultancy",
@@ -49,10 +44,14 @@ export function ContactUs() {
       )
       .then(
         (result) => {
+          toast.success("Thank you for reaching us we will contact you soon  ");
           console.log("Email sent successfully!", result.text);
+          setIsLoading(false);
         },
         (error) => {
-          console.log("Failed to send email:", error.text);
+          toast.error("Unable to send the Mail please try again");
+          setIsLoading(false);
+          console.log("Failed to send email:", error);
         }
       );
   };
@@ -64,7 +63,7 @@ export function ContactUs() {
           name="fullname"
           render={({ field }) => (
             <FormItem>
-              <FormLabel className="text-muted-foreground">Username</FormLabel>
+              <FormLabel className="text-muted-foreground">Full Name</FormLabel>
               <FormControl>
                 <Input
                   placeholder="Please enter Full name"
@@ -130,7 +129,7 @@ export function ContactUs() {
           )}
         />
         <Button type="submit" className="w-full">
-          Submit
+          {isLoading ? "Loading ..." : "Submit"}
         </Button>
       </form>
     </Form>
