@@ -16,6 +16,15 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "./ui/textarea";
+import emailjs from "@emailjs/browser";
+
+interface templateParams {
+  to_name: string;
+  from_name: string;
+  phone: string;
+  email: string;
+  message: string;
+}
 
 export function ContactUs() {
   const form = useForm<z.infer<typeof ContactUsSchema>>({
@@ -23,6 +32,29 @@ export function ContactUs() {
   });
   const onSubmit = (values: z.infer<typeof ContactUsSchema>) => {
     console.log("form values date ==", values);
+    const templateParams = {
+      to_name: "Elabem Consultancy",
+      from_name: values.fullname,
+      phone: values.phoneNumber,
+      email: values.email,
+      message: values.message,
+    };
+
+    emailjs
+      .send(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID ?? "",
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID ?? "",
+        templateParams,
+        process.env.NEXT_PUBLIC_EMAILJS_USER_ID ?? ""
+      )
+      .then(
+        (result) => {
+          console.log("Email sent successfully!", result.text);
+        },
+        (error) => {
+          console.log("Failed to send email:", error.text);
+        }
+      );
   };
   return (
     <Form {...form}>
