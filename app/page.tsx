@@ -56,7 +56,7 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <div className="w-[80%] mx-auto mt-24 md:mt-3">
+      <div className="w-[90%] md:w-[80%] mx-auto mt-24 md:mt-3">
         <h1 className="text-primary text-center font-bold text-2xl py-5">
           Why Choose Elabem
         </h1>
