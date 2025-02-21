@@ -8,6 +8,7 @@ import {
 } from "@/components/ui/card";
 import Services from "@/components/Services";
 import Link from "next/link";
+import FAQ from "@/components/FAQ";
 
 export default function Home() {
   const cardData = [
@@ -79,6 +80,7 @@ export default function Home() {
         </div>
       </div>
       <Services />
+      <FAQ />
     </>
   );
 }
