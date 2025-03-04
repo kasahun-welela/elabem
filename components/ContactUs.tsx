@@ -23,6 +23,12 @@ export function ContactUs() {
   const [isLoading, setIsLoading] = useState(false);
   const form = useForm<z.infer<typeof ContactUsSchema>>({
     resolver: zodResolver(ContactUsSchema),
+    defaultValues: {
+      fullname: "",
+      email: "",
+      phoneNumber: "",
+      message: "",
+    },
   });
   const onSubmit = async (values: z.infer<typeof ContactUsSchema>) => {
     setIsLoading(true);
