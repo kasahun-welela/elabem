@@ -1,13 +1,13 @@
 import Hero from "@/components/Hero";
-import {
-  Card,
-  CardContent,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+// import {
+//   Card,
+//   CardContent,
+//   CardFooter,
+//   CardHeader,
+//   CardTitle,
+// } from "@/components/ui/card";
 import Services from "@/components/Services";
-import Link from "next/link";
+// import Link from "next/link";
 import FAQ from "@/components/FAQ";
 
 export default function Home() {
@@ -56,7 +56,7 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <div className="w-[90%] md:w-[80%] mx-auto mt-24 md:mt-3">
+      {/* <div className="w-[90%] md:w-[80%] mx-auto mt-24 md:mt-3">
         <h1 className="text-primary text-center font-bold text-2xl py-5">
           Why Choose Elabem
         </h1>
@@ -78,7 +78,7 @@ export default function Home() {
             </Card>
           ))}
         </div>
-      </div>
+      </div> */}
       <Services />
       <FAQ />
     </>
