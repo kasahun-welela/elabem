@@ -17,7 +17,7 @@ function NavBar() {
     setMenuOpen(false);
   };
 
-  // Animation variants for the mobile menu
+  // Animation variants
   const mobileMenuVariants = {
     open: {
       opacity: 1,
@@ -42,13 +42,13 @@ function NavBar() {
   };
 
   return (
-    <div className="w-full shadow-sm">
+    <>
       {/* Desktop Navigation */}
-      <div className="hidden md:flex justify-around items-center py-5 md:w-[80%] mx-auto">
+      <div className="hidden md:flex justify-between items-center py-2 w-[90%] mx-auto fixed top-0 left-0 right-0 bg-white shadow-sm z-50 ">
         <Image
           src="/logo.png"
           alt="logo"
-          className="bg-primary"
+          className="bg-primary h-14"
           width={200}
           height={50}
         />
@@ -97,12 +97,12 @@ function NavBar() {
       </div>
 
       {/* Mobile Navigation */}
-      <div className="flex justify-between items-center max-w-[90%] mx-auto md:hidden py-5">
+      <div className="bg-white flex justify-between items-center px-5 md:hidden py-5 fixed top-0 left-0 right-0 shadow-sm z-50 transition-all duration-300">
         <Link href="/">
           <Image
             src="/logo.png"
             alt="logo"
-            className="bg-primary"
+            className="bg-primary h-12 w-39"
             width={200}
             height={70}
           />
@@ -114,7 +114,7 @@ function NavBar() {
         </div>
       </div>
 
-      {/* Mobile menu nav list = */}
+      {/* Mobile menu nav list */}
       <AnimatePresence>
         {menuOpen && (
           <motion.div
@@ -190,7 +190,7 @@ function NavBar() {
           </motion.div>
         )}
       </AnimatePresence>
-    </div>
+    </>
   );
 }
 

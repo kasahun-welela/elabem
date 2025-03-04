@@ -20,7 +20,7 @@ import Image from "next/image";
 
 export default function page() {
   return (
-    <div className="max-w-[80%]  mx-auto md:flex gap-12 mt-24 md:mt-3">
+    <div className="max-w-[90%]  mx-auto md:flex gap-12 mt-24">
       <div className="md:grid grid-cols-2 gap-3 md:basis-[70%]">
         {scholarsList.map((list: any, key) => (
           <Card key={key} className="my-3 md:my-0">

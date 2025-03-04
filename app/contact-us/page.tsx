@@ -4,7 +4,7 @@ import { Card } from "@/components/ui/card";
 
 export default function page() {
   return (
-    <div className="mx-6 md:w-[80%] md:mx-auto mt-24 md:mt-0 py-6">
+    <div className="w-[90%] mx-auto mt-24 py-6">
       <div>
         <h1 className="text-center text-2xl">Get in touch with us</h1>
         <p className="md:text-center leading-relaxed text-gray-600">
