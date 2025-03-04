@@ -17,12 +17,20 @@ import {
 
 import { scholarsList } from "@/dummyData/scholarship";
 import Image from "next/image";
+interface scholarsListType {
+  id: number;
+  name: string;
+  provider: string;
+  amount: number;
+  currency: string;
+  deadline: string;
+}
 
 export default function page() {
   return (
     <div className="max-w-[90%]  mx-auto md:flex gap-12 mt-24">
       <div className="md:grid grid-cols-2 gap-3 md:basis-[70%]">
-        {scholarsList.map((list: any, key) => (
+        {scholarsList.map((list: scholarsListType, key) => (
           <Card key={key} className="my-3 md:my-0">
             <div className="flex items-center px-6">
               <Image src="/edu.jpg" alt="logo" width={50} height={50} />

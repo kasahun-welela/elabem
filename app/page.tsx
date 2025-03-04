@@ -11,47 +11,47 @@ import Services from "@/components/Services";
 import FAQ from "@/components/FAQ";
 
 export default function Home() {
-  const cardData = [
-    {
-      title: "A rich history",
-      icon: "ri-graduation-cap-fill",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      linkTo: "/",
-    },
-    {
-      title: "Global Network",
-      icon: "ri-global-line",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  // const cardData = [
+  //   {
+  //     title: "A rich history",
+  //     icon: "ri-graduation-cap-fill",
+  //     description:
+  //       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  //     linkTo: "/",
+  //   },
+  //   {
+  //     title: "Global Network",
+  //     icon: "ri-global-line",
+  //     description:
+  //       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
 
-      linkTo: "/",
-    },
-    {
-      title: "Closer to you",
-      icon: "ri-team-fill",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  //     linkTo: "/",
+  //   },
+  //   {
+  //     title: "Closer to you",
+  //     icon: "ri-team-fill",
+  //     description:
+  //       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
 
-      linkTo: "/",
-    },
-    {
-      title: "Driven by innovation",
-      icon: "ri-search-line",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  //     linkTo: "/",
+  //   },
+  //   {
+  //     title: "Driven by innovation",
+  //     icon: "ri-search-line",
+  //     description:
+  //       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
 
-      linkTo: "",
-    },
-    {
-      title: "Centered around you",
-      icon: "ri-pulse-line",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  //     linkTo: "",
+  //   },
+  //   {
+  //     title: "Centered around you",
+  //     icon: "ri-pulse-line",
+  //     description:
+  //       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
 
-      linkTo: "/",
-    },
-  ];
+  //     linkTo: "/",
+  //   },
+  // ];
 
   return (
     <>

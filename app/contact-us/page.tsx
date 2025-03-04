@@ -9,8 +9,8 @@ export default function page() {
         <h1 className="text-center text-2xl">Get in touch with us</h1>
         <p className="md:text-center leading-relaxed text-gray-600">
           We would love to hear from you! If you have any questions, comments,
-          or inquiries, please don't hesitate to get in touch with us. Our team
-          is here to assist you in any way we can.
+          or inquiries, please don&apos;t hesitate to get in touch with us. Our
+          team is here to assist you in any way we can.
         </p>
       </div>
 
@@ -21,7 +21,7 @@ export default function page() {
           </h2>
           <p className="leading-relaxed text-gray-600 md:text-base ">
             For general inquiries, partnerships, or any other matter, please use
-            the contact form below. We'll respond as soon as possible.
+            the contact form below. We&apos;ll respond as soon as possible.
           </p>
 
           <div className="flex items-center gap-4 ml-6 md:ml-10 my-3">
