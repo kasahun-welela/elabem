@@ -46,13 +46,16 @@ function NavBar() {
       {/* Desktop Navigation */}
       <div className="hidden md:block fixed top-0 left-0 right-0 bg-white shadow z-50 tracking-widest">
         <div className="flex justify-between items-center py-2 w-[90%] mx-auto">
-          <Image
-            src="/logo.png"
-            alt="logo"
-            className="bg-primary h-14"
-            width={200}
-            height={50}
-          />
+          <Link href="/">
+            {" "}
+            <Image
+              src="/logo.png"
+              alt="logo"
+              className="bg-primary h-14"
+              width={200}
+              height={50}
+            />
+          </Link>
           <ul className="flex justify-end gap-6">
             <li>
               <Link

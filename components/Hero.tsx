@@ -10,7 +10,7 @@ export default function Hero() {
         <div className="flex flex-col gap-6">
           <h1 className="md:text-4xl lg:text-4xl text-2xl font-extrabold">
             College apps take a community. We&apos;ve got one that can{" "}
-            <span className="text-sky-400">change your life</span>
+            <span className="text-primary">change your life</span>
           </h1>
           <p className="tracking-wide text-justify text-xl">
             Empowerly connects you with a team of college admission experts,
