@@ -50,10 +50,10 @@ function NavBar() {
           <Link href="/">
             {" "}
             <Image
-              src="logo.png"
+              src="/logo.png"
               alt="Elabem consultancy logo"
               width={208}
-              height={56}
+              height={10}
             />
           </Link>
           <ul className="flex justify-end gap-6">
@@ -105,11 +105,10 @@ function NavBar() {
       <div className="bg-white flex justify-between items-center px-5 md:hidden py-5 fixed top-0 left-0 right-0 shadow-sm z-50 transition-all duration-300">
         <Link href="/">
           <Image
-            src="logo.png"
+            src="/logo.png"
             alt="Elabem consultancy logo"
-            className="bg-primary h-12 w-39"
-            height={48}
-            width={48}
+            height={100}
+            width={100}
           />
         </Link>
         <div className="flex items-center gap-4">
