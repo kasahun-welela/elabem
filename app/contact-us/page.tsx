@@ -6,8 +6,10 @@ export default function page() {
   return (
     <div className="w-[90%] mx-auto mt-24 py-6">
       <div>
-        <h1 className="text-center text-2xl">Get in touch with us</h1>
-        <p className="md:text-center leading-relaxed text-gray-600">
+        <h1 className="text-2xl md:text-3xl font-bold mb-2 text-center">
+          Get in touch with us
+        </h1>
+        <p className="text-base md:text-center leading-relaxed text-gray-600">
           We would love to hear from you! If you have any questions, comments,
           or inquiries, please don&apos;t hesitate to get in touch with us. Our
           team is here to assist you in any way we can.
@@ -16,7 +18,7 @@ export default function page() {
 
       <div className="md:flex gap-5 md:mt-10 md:w-[70%] mx-auto">
         <div className="basis-1/2">
-          <h2 className="text-center text-xl md:text-3xl py-2 ">
+          <h2 className="text-center text-xl md:text-3xl py-2 font-semibold">
             Get in Touch
           </h2>
           <p className="leading-relaxed text-gray-600 md:text-base ">
