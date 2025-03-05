@@ -44,56 +44,58 @@ function NavBar() {
   return (
     <>
       {/* Desktop Navigation */}
-      <div className="hidden md:flex justify-between items-center py-2 w-[90%] mx-auto fixed top-0 left-0 right-0 bg-white shadow-sm z-50 ">
-        <Image
-          src="/logo.png"
-          alt="logo"
-          className="bg-primary h-14"
-          width={200}
-          height={50}
-        />
-        <ul className="flex justify-end gap-6">
-          <li>
-            <Link
-              href="/"
-              className={`${
-                path === "/" ? "text-primary font-bold" : ""
-              } hover:font-semibold hover:text-primary`}
-            >
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="/about"
-              className={`${
-                path === "/about" ? "text-primary font-bold" : ""
-              } hover:font-semibold hover:text-primary`}
-            >
-              About Us
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="/scholarship"
-              className={`${
-                path === "/scholarship" ? "text-primary font-bold" : ""
-              } hover:font-semibold hover:text-primary`}
-            >
-              Scholarship
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="/contact-us"
-              className={`${
-                path === "/contact-us" ? "text-primary font-bold" : ""
-              } hover:font-semibold hover:text-primary`}
-            >
-              Contact Us
-            </Link>
-          </li>
-        </ul>
+      <div className="hidden md:block fixed top-0 left-0 right-0 bg-white shadow z-50 tracking-widest">
+        <div className="flex justify-between items-center py-2 w-[90%] mx-auto">
+          <Image
+            src="/logo.png"
+            alt="logo"
+            className="bg-primary h-14"
+            width={200}
+            height={50}
+          />
+          <ul className="flex justify-end gap-6">
+            <li>
+              <Link
+                href="/"
+                className={`${
+                  path === "/" ? "text-primary font-bold" : ""
+                } hover:font-semibold hover:text-primary`}
+              >
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/about"
+                className={`${
+                  path === "/about" ? "text-primary font-bold" : ""
+                } hover:font-semibold hover:text-primary`}
+              >
+                About Us
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/scholarship"
+                className={`${
+                  path === "/scholarship" ? "text-primary font-bold" : ""
+                } hover:font-semibold hover:text-primary`}
+              >
+                Scholarship
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/contact-us"
+                className={`${
+                  path === "/contact-us" ? "text-primary font-bold" : ""
+                } hover:font-semibold hover:text-primary`}
+              >
+                Contact Us
+              </Link>
+            </li>
+          </ul>
+        </div>
       </div>
 
       {/* Mobile Navigation */}

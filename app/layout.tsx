@@ -37,7 +37,9 @@ export default function RootLayout({
       <head>
         <link rel="icon" type="image/png" sizes="32x32" href="/logo1.png" />
       </head>
-      <body className={`${roboto.variable} font-roboto antialiased`}>
+      <body
+        className={`${roboto.variable} font-roboto tracking-wide antialiased`}
+      >
         <NavBar />
         <ToastContainer />
         {children}

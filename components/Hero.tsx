@@ -19,7 +19,7 @@ export default function Hero() {
         </div>
         <Link
           href="/contact-us"
-          className="bg-primary hover:opacity-80 mt-6 inline-block py-4 px-6 rounded-2xl text-white"
+          className="bg-primary hover:bg-primary/50 p-3 rounded-sm text-white inline-block mt-6"
         >
           Contact Us
         </Link>
