@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
-// import logo from "@/public/logo.png";
+// import logo from "@/public/elabem_logo.png";
 
 function NavBar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -50,7 +50,7 @@ function NavBar() {
           <Link href="/">
             {" "}
             <Image
-              src="/logo.png"
+              src="/elabem_logo.png"
               alt="Elabem consultancy logo"
               width={208}
               height={10}
@@ -105,7 +105,7 @@ function NavBar() {
       <div className="bg-white flex justify-between items-center px-5 md:hidden py-5 fixed top-0 left-0 right-0 shadow-sm z-50 transition-all duration-300">
         <Link href="/">
           <Image
-            src="/logo.png"
+            src="/elabem_logo.png"
             alt="Elabem consultancy logo"
             height={100}
             width={100}
