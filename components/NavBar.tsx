@@ -4,10 +4,7 @@ import React, { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
-// import logo from "@/public/elabem_logo.png";
-import { Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
-import { Button } from "./ui/button";
 
 function NavBar() {
   const [menuOpen, setMenuOpen] = useState(false);
