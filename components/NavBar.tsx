@@ -117,7 +117,7 @@ function NavBar() {
       </div>
 
       {/* Mobile Navigation */}
-      <div className="bg-white flex justify-between items-center px-5 md:hidden py-5 fixed top-0 left-0 right-0 shadow-sm z-50 transition-all duration-300">
+      <div className="bg-white dark:bg-slate-800  flex justify-between items-center px-5 md:hidden py-5 fixed top-0 left-0 right-0 shadow-sm z-50 transition-all duration-300">
         <Link href="/">
           <Image
             src="/elabem_logo.png"
@@ -126,9 +126,17 @@ function NavBar() {
             width={100}
           />
         </Link>
+        {theme === "dark" ? (
+          <i className="ri-sun-fill text-xl" onClick={toggleTheme}></i>
+        ) : (
+          <i className="ri-contrast-2-line text-xl" onClick={toggleTheme}></i>
+        )}
         <div className="flex items-center gap-4">
-          <button onClick={handleMenuClick} className="text-primary">
-            <i className="ri-menu-line text-2xl"></i>
+          <button
+            onClick={handleMenuClick}
+            className="text-primary dark:text-white"
+          >
+            <i className="ri-menu-line text-2xl "></i>
           </button>
         </div>
       </div>
@@ -145,7 +153,7 @@ function NavBar() {
             transition={{ duration: 1 }}
           >
             <motion.div
-              className="fixed inset-y-0 left-0 w-[75%] bg-white z-50 overflow-y-auto"
+              className="fixed inset-y-0 left-0 w-[75%] bg-white dark:bg-slate-800  z-50 overflow-y-auto"
               variants={mobileMenuVariants}
               initial="closed"
               animate="open"
@@ -153,8 +161,11 @@ function NavBar() {
             >
               <div className="text-primary font-bold flex justify-between items-center p-4">
                 <h1>Elabem Consultancy</h1>
-                <button onClick={closeMenu} className="text-primary">
-                  <i className="ri-close-line text-2xl"></i>
+                <button
+                  onClick={closeMenu}
+                  className="text-primary dark:text-white"
+                >
+                  <i className="ri-close-line text-2xl "></i>
                 </button>
               </div>
               <ul className="space-y-4 p-4">
