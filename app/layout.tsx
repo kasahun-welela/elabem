@@ -5,6 +5,7 @@ import "remixicon/fonts/remixicon.css";
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
 import { ToastContainer } from "react-toastify";
+import { ThemeProvider } from "@/components/theme-provider";
 
 const roboto = Roboto({
   variable: "--font-roboto",
@@ -38,12 +39,20 @@ export default function RootLayout({
         <link rel="icon" type="image/png" sizes="32x32" href="/logo1.png" />
       </head>
       <body
-        className={`${roboto.variable} font-roboto tracking-wide antialiased`}
+        className={`${roboto.variable} bg-muted font-roboto tracking-wide antialiased`}
       >
-        <NavBar />
-        <ToastContainer />
-        {children}
-        <Footer />
+        {" "}
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <NavBar />
+          <ToastContainer />
+          {children}
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );

@@ -5,10 +5,14 @@ import { AnimatePresence, motion } from "framer-motion";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
 // import logo from "@/public/elabem_logo.png";
+import { Moon, Sun } from "lucide-react";
+import { useTheme } from "next-themes";
+import { Button } from "./ui/button";
 
 function NavBar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const path = usePathname();
+  const { theme, setTheme } = useTheme();
 
   const handleMenuClick = () => {
     setMenuOpen(!menuOpen);
@@ -42,10 +46,14 @@ function NavBar() {
     },
   };
 
+  const toggleTheme = () => {
+    setTheme(theme === "light" ? "dark" : "light");
+  };
+
   return (
     <>
       {/* Desktop Navigation */}
-      <div className="hidden md:block fixed top-0 left-0 right-0 bg-white shadow z-50 tracking-widest">
+      <div className="hidden md:block fixed top-0 left-0 right-0 bg-white dark:bg-slate-800 shadow z-50 tracking-widest">
         <div className="flex justify-between items-center py-2 w-[90%] mx-auto">
           <Link href="/">
             {" "}
@@ -53,10 +61,10 @@ function NavBar() {
               src="/elabem_logo.png"
               alt="Elabem consultancy logo"
               width={208}
-              height={10}
+              height={4}
             />
           </Link>
-          <ul className="flex justify-end gap-6">
+          <ul className="flex justify-end gap-6 items-center dark:text-white">
             <li>
               <Link
                 href="/"
@@ -96,6 +104,13 @@ function NavBar() {
               >
                 Contact Us
               </Link>
+            </li>
+            <li>
+              {theme === "dark" ? (
+                <i className="ri-sun-fill" onClick={toggleTheme}></i>
+              ) : (
+                <i className="ri-contrast-2-line" onClick={toggleTheme}></i>
+              )}
             </li>
           </ul>
         </div>
