@@ -2,7 +2,8 @@ import Hero from "@/components/Hero";
 import Services from "@/components/Services";
 import FAQ from "@/components/FAQ";
 import VideoComponent from "@/components/VideoComponent";
-// import Image from "next/image";
+import Image from "next/image";
+import studentImg from "@/public/students_high.png";
 
 export default function Home() {
   // const workList = [
@@ -84,6 +85,23 @@ export default function Home() {
           />
         </div>
       </section> */}
+      <section className="bg-primary my-6">
+        <div className=" md:flex justify-between items-center w-[90%] mx-auto">
+          <div className="w-[90%] mx-auto md:basis-1/2 py-8 ">
+            <h1 className="text-3xl font-bold mb-2 text-white text-center md:text-start">
+              Are you dreaming of studying abroad?
+            </h1>
+            <p className="text-white tracking-wide  py-3 ">
+              We specialize in helping students like you achieve their global
+              education goals. From university admissions to visa support, our
+              expert team guides you every step of the way. Stop worrying about
+              the complexities and start your journey to studying abroad with
+              confidence.
+            </p>
+          </div>
+          <Image src={studentImg} alt="student picture" />
+        </div>
+      </section>
       <FAQ />
     </>
   );
