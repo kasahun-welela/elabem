@@ -1,4 +1,4 @@
-import Link from "next/link";
+// import Link from "next/link";
 import {
   Accordion,
   AccordionContent,
@@ -9,7 +9,7 @@ import {
 export default function FAQ() {
   return (
     <div className="bg-muted py-14">
-      <div className="w-[90%] md:w-[80%] mx-auto md:flex justify-between items-center gap-9 ">
+      {/* <div className="w-[90%] md:w-[80%] mx-auto md:flex justify-between items-center gap-9 ">
         <div className="basis-1/2 my-3">
           <h1 className="text-3xl font-bold mb-2 text-center md:text-start">
             Frequently Asked Question
@@ -82,6 +82,63 @@ export default function FAQ() {
             </AccordionItem>
           </Accordion>
         </div>
+      </div> */}
+      <div className="w-[90%] md:w-[50%] mx-auto">
+        <h1 className="text-3xl font-bold mb-2 text-center">FAQ</h1>
+        <Accordion type="single" collapsible className="w-full space-y-2">
+          <AccordionItem
+            value="faq-1"
+            className="px-3 rounded-md shadow bg-white"
+          >
+            <AccordionTrigger>
+              1. How is get admission in abroad university?
+            </AccordionTrigger>
+            <AccordionContent>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam
+            </AccordionContent>
+          </AccordionItem>
+          <AccordionItem
+            value="faq-2"
+            className="px-3 rounded-md shadow bg-white"
+          >
+            <AccordionTrigger>
+              2. Do you offer complete solution for students?
+            </AccordionTrigger>
+            <AccordionContent>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam
+            </AccordionContent>
+          </AccordionItem>
+          <AccordionItem
+            value="faq-3"
+            className="px-3 rounded-md shadow bg-white"
+          >
+            <AccordionTrigger>
+              3. Which country is safe and better for higher study?
+            </AccordionTrigger>
+            <AccordionContent>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam
+            </AccordionContent>
+          </AccordionItem>
+          <AccordionItem
+            value="faq-4"
+            className="px-3 rounded-md shadow bg-white"
+          >
+            <AccordionTrigger>
+              4. Do you allow accomadation for students in abroad?
+            </AccordionTrigger>
+            <AccordionContent>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam
+            </AccordionContent>
+          </AccordionItem>
+        </Accordion>
       </div>
     </div>
   );
