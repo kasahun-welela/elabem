@@ -1,3 +1,4 @@
+import Slider from "@/components/Slider";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 export default function page() {
@@ -26,6 +27,7 @@ export default function page() {
         "Thousand of students have entrusted us with their university onboarding",
     },
   ];
+
   return (
     <>
       {" "}
@@ -44,11 +46,22 @@ export default function page() {
           ))}
         </div>
       </div>
+      <h1 className="text-2xl md:text-3xl font-bold mb-2 text-center bg-[#3e53a2] py-6 text-white">
+        Why Elabem
+      </h1>
+      <Slider />
+      {/* </div> */}
       <section className="bg-[#3e53a2] my-6">
         <div className=" md:flex justify-between items-center w-[90%] mx-auto">
           <div className="w-[90%] mx-auto md:basis-1/2 py-8 ">
             <h1 className="text-6xl font-bold mb-2 text-white ">Why</h1>
             <h1 className="text-6xl font-bold mb-2 text-white ">Elabem</h1>
+          </div>
+
+          <div>
+            <div className="rounded border bg-card text-card-foreground shadow p-3">
+              <p>Global Reach</p>
+            </div>
           </div>
         </div>
       </section>
