@@ -67,7 +67,7 @@ export function ContactUs() {
           name="fullname"
           render={({ field }) => (
             <FormItem>
-              <FormLabel className="text-muted-foreground">Full Name</FormLabel>
+              <FormLabel>Full Name</FormLabel>
               <FormControl>
                 <Input
                   placeholder="Please enter Full name"
@@ -84,7 +84,7 @@ export function ContactUs() {
           name="email"
           render={({ field }) => (
             <FormItem>
-              <FormLabel className="text-muted-foreground">Email</FormLabel>
+              <FormLabel>Email</FormLabel>
               <FormControl>
                 <Input
                   placeholder="Please enter your email"
@@ -101,9 +101,7 @@ export function ContactUs() {
           name="phoneNumber"
           render={({ field }) => (
             <FormItem>
-              <FormLabel className="text-muted-foreground">
-                Phone Number
-              </FormLabel>
+              <FormLabel>Phone Number</FormLabel>
               <FormControl>
                 <Input
                   placeholder="Please enter phone number"
@@ -120,7 +118,7 @@ export function ContactUs() {
           name="message"
           render={({ field }) => (
             <FormItem>
-              <FormLabel className="text-muted-foreground">Message</FormLabel>
+              <FormLabel>Message</FormLabel>
               <FormControl>
                 <Textarea
                   placeholder="Type your message here."

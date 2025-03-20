@@ -42,30 +42,13 @@ export default function page() {
             Our platform streamlines the journey of studying abroad, helping
             students and families navigate every stage with ease.
           </p>
-
-          <h1 className="text-2xl md:text-3xl font-bold mb-2 text-center">
-            Our Core Values
-          </h1>
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-2 md:gap-4">
-            {coreValue.map((value) => (
-              <Card key={value.title}>
-                <CardHeader>
-                  <CardTitle>{value.title}</CardTitle>
-                </CardHeader>
-                <CardContent>{value.description}</CardContent>
-              </Card>
-            ))}
-          </div>
         </div>
-        <h1 className="text-2xl md:text-3xl font-bold mb-2 text-center py-6">
-          Our Services
-        </h1>
-        <Slider />
+
         <section className="my-6">
           <h1 className="text-2xl md:text-3xl font-bold mb-2 text-center">
             Reasons to Select Us
           </h1>
-          <div className="md:flex justify-between items-center gap-5 mt-4">
+          <div className="md:flex justify-between items-center gap-14 mt-4">
             <Image
               src={abt}
               alt="students"
@@ -106,6 +89,25 @@ export default function page() {
             </div>
           </div>
         </section>
+
+        <h1 className="text-2xl md:text-3xl font-bold mb-2 text-center">
+          Our Core Values
+        </h1>
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-2 md:gap-4">
+          {coreValue.map((value) => (
+            <Card key={value.title}>
+              <CardHeader>
+                <CardTitle>{value.title}</CardTitle>
+              </CardHeader>
+              <CardContent>{value.description}</CardContent>
+            </Card>
+          ))}
+        </div>
+
+        <h1 className="text-2xl md:text-3xl font-bold mb-2 text-center py-6">
+          Our Services
+        </h1>
+        <Slider />
       </div>
     </>
   );
