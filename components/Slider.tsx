@@ -29,7 +29,7 @@ export default function () {
       icon: "",
       title: " Dedicated Post-Admission Support",
       description:
-        "Our relationship doesn’t end with your acceptance letter. We offer ongoing support to help you adjust to your new academic environment, ensuring a smooth transition and long-term success. ",
+        "Our relationship does not end with your acceptance letter. We offer ongoing support to help you adjust to your new academic environment, ensuring a smooth transition and long-term success. ",
     },
     {
       id: 4,
