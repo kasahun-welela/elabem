@@ -64,7 +64,6 @@ export default function () {
           delay: 5000,
         }),
       ]}
-      className="w-[90%] mx-auto"
     >
       <CarouselContent className="-ml-1">
         {whyElabem.map((items, index) => (
