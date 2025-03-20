@@ -32,6 +32,16 @@ export default function page() {
     <>
       {" "}
       <div className="w-[90%] mx-auto mt-24 py-6">
+        <div className="md:w-[70%] mx-auto py-4 md:py-16">
+          <h1 className="tracking-wider text-2xl md:text-4xl  font-bold mb-2 text-center ">
+            We Support Students in Achieving Their Study Abroad Dreams
+          </h1>
+          <p className="tracking-wide text-lg text-center">
+            Our platform streamlines the journey of studying abroad, helping
+            students and families navigate every stage with ease.
+          </p>
+        </div>
+
         <h1 className="text-2xl md:text-3xl font-bold mb-2 text-center">
           Our Core Values
         </h1>
@@ -46,8 +56,8 @@ export default function page() {
           ))}
         </div>
       </div>
-      <h1 className="text-2xl md:text-3xl font-bold mb-2 text-center bg-[#3e53a2] py-6 text-white">
-        Why Elabem
+      <h1 className="text-2xl md:text-3xl font-bold mb-2 text-center py-6">
+        Our Services
       </h1>
       <Slider />
       {/* </div> */}
