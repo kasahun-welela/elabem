@@ -10,116 +10,55 @@ export default function FAQ() {
   const faqs = [
     {
       id: 1,
-      question: "1. How is get admission in abroad university?",
+      question: "1. What services does Elabem Consultancy provide?",
       answer:
-        "  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+        " At Elabem Educational Consultancy, we are dedicated to helping students achieve their academic dreams abroad. We offer a wide range of services, including Personalized academic counseling and university selection, Full application support, including essay and Statement of Purpose (SOP) guidance, Scholarship and financial aid application assistance, Visa document preparation and interview coaching, Pre-departure briefings, including housing, insurance, and travel guidance, Post-arrival support services to help students settle smoothly in a new country, We are committed to being with you at every stage of your journey — from your first consultation until you step confidently into your new academic life abroad.",
     },
     {
       id: 2,
-      question: "2. Do you offer complete solution for students?",
+      question: "2. Which countries do you assist students in applying to?",
       answer:
-        "  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+        "Elabem Consultancy proudly supports students applying to leading institutions in: The United States, Canada, United Kingdom, Australia, Germany, Ireland, New Zealand, and several other countries known for their outstanding education systems.",
     },
     {
       id: 3,
-      question: "3. Which country is safe and better for higher study?",
+      question: "3. Is the first consultation really free?",
       answer:
-        "  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+        "<b>Yes</b>, the first consultation is completely free. We believe in providing a no-obligation opportunity for students to discuss their goals and explore their options without any commitment.",
     },
     {
       id: 4,
-      question: "4. Do you allow accomadation for students in abroad?",
+      question:
+        "4. Is an English proficiency exam mandatory for studying abroad?",
       answer:
-        "  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+        "Yes. Proving English language proficiency is a mandatory requirement for international students applying to universities in: The United States, Canada, Australia, The United Kingdom, and many others. You must take tests such as: TOEFL (Test of English as a Foreign Language), IELTS (International English Language Testing System), Duolingo English Test (accepted by many U.S. universities) depending on your target institution’s preferences. We assist you in selecting the right test, registering for it, and providing resources to help you prepare and achieve the scores you need.",
     },
   ];
   return (
-    <div className="py-14">
-      {/* <div className="w-[90%] md:w-[80%] mx-auto md:flex justify-between items-center gap-9 ">
-        <div className="basis-1/2 my-3">
-          <h1 className="text-3xl font-bold mb-2 text-center md:text-start">
-            Frequently Asked Question
-          </h1>
-          <hr className="bg-primary h-1 w-6 " />
-          <p className="font-semibold text-xl md:text-2xl py-5">
-            Still do you have any questions to know? Feel free to ask our
-            experts here.
-          </p>
-          <Link
-            href="/contact-us"
-            className="bg-primary hover:bg-primary/50 p-3 rounded-sm text-white inline-block my-5"
-          >
-            Ask your Questions
-          </Link>
-        </div>
-        <div className="basis-1/2">
-          <Accordion type="single" collapsible className="w-full space-y-2">
-            <AccordionItem
-              value="faq-1"
-              className="px-3 rounded-md shadow bg-white"
-            >
-              <AccordionTrigger>
-                1. How is get admission in abroad university?
-              </AccordionTrigger>
-              <AccordionContent>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam
-              </AccordionContent>
-            </AccordionItem>
-            <AccordionItem
-              value="faq-2"
-              className="px-3 rounded-md shadow bg-white"
-            >
-              <AccordionTrigger>
-                2. Do you offer complete solution for students?
-              </AccordionTrigger>
-              <AccordionContent>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam
-              </AccordionContent>
-            </AccordionItem>
-            <AccordionItem
-              value="faq-3"
-              className="px-3 rounded-md shadow bg-white"
-            >
-              <AccordionTrigger>
-                3. Which country is safe and better for higher study?
-              </AccordionTrigger>
-              <AccordionContent>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam
-              </AccordionContent>
-            </AccordionItem>
-            <AccordionItem
-              value="faq-4"
-              className="px-3 rounded-md shadow bg-white"
-            >
-              <AccordionTrigger>
-                4. Do you allow accomadation for students in abroad?
-              </AccordionTrigger>
-              <AccordionContent>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam
-              </AccordionContent>
-            </AccordionItem>
-          </Accordion>
-        </div>
-      </div> */}
+    <div className="py-16 bg-gray-50 dark:bg-slate-900">
       <div className="w-[90%] md:w-[50%] mx-auto">
-        <h1 className="text-3xl font-bold mb-2 text-center">FAQs</h1>
-        <Accordion type="single" collapsible className="w-full space-y-2 ">
+        <div className="text-center mb-12">
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-primary relative inline-block text-center">
+            FAQs
+            <span className="absolute -bottom-2 left-0 w-full h-1 bg-primary/30"></span>
+          </h1>
+          <p className="text-gray-600 dark:text-gray-300 text-lg mt-4">
+            Find answers to common questions about our services and process
+          </p>
+        </div>
+        <Accordion type="single" collapsible className="w-full space-y-4">
           {faqs.map((faq) => (
             <AccordionItem
               key={faq.id}
               value={`faq${faq.id}`}
-              className="px-3 rounded-md shadow bg-white dark:bg-slate-950"
+              className="px-6 py-2 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 bg-white dark:bg-slate-950 border border-gray-100 dark:border-gray-800"
             >
-              <AccordionTrigger>{faq.question} </AccordionTrigger>
-              <AccordionContent>{faq.answer}</AccordionContent>
+              <AccordionTrigger className="text-lg font-semibold hover:text-primary transition-colors">
+                {faq.question}
+              </AccordionTrigger>
+              <AccordionContent className="font-normal leading-relaxed">
+                {faq.answer}
+              </AccordionContent>
             </AccordionItem>
           ))}
         </Accordion>
