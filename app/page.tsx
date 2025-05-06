@@ -57,12 +57,12 @@ export default function Home() {
       {/* <Services /> */}
 
       <section className="bg-[#3e53a2] my-6">
-        <div className=" md:flex justify-between items-center w-[90%] mx-auto">
-          <div className="w-[90%] mx-auto md:basis-1/2 py-8 ">
-            <h1 className="text-3xl font-bold mb-2 text-white text-center md:text-start">
+        <div className="md:flex justify-between items-center w-[90%] mx-auto">
+          <div className="w-[90%] mx-auto md:basis-1/2 py-8">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white text-center md:text-start leading-tight">
               Are you dreaming of studying abroad?
             </h1>
-            <p className="text-white tracking-wide  py-3 ">
+            <p className="text-white/90 text-lg leading-relaxed">
               We specialize in helping students like you achieve their global
               education goals. From university admissions to visa support, our
               expert team guides you every step of the way. Stop worrying about
@@ -75,7 +75,13 @@ export default function Home() {
       </section>
 
       <section className="w-[90%] mx-auto my-6">
-        <h1 className="text-3xl font-bold my-4 text-center">How we work</h1>
+        <div className="text-center mb-2">
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-primary relative inline-block text-center">
+            How we work
+            <span className="absolute -bottom-2 left-0 w-full h-1 bg-primary/30"></span>
+          </h1>
+        </div>
+
         <div className="grid grid-cols-1 md:grid-cols-3 gap-2 md:gap-3">
           {workList.map((steps) => (
             <div
