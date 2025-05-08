@@ -4,49 +4,66 @@ import { Card } from "@/components/ui/card";
 
 export default function page() {
   return (
-    <div className="w-[90%] mx-auto mt-24 py-6">
-      <div>
-        <h1 className="text-2xl md:text-3xl font-bold mb-2 text-center">
+    <div className="w-[90%] mx-auto mt-24 py-12">
+      <div className="text-center mb-12 animate-fadeIn">
+        <h1 className="text-4xl md:text-5xl font-bold mb-6 text-primary relative inline-block">
           Get in touch with us
+          <span className="absolute -bottom-2 left-0 w-full h-1 bg-primary/30"></span>
         </h1>
-        <p className="text-base md:text-center leading-relaxed ">
+        <p className="text-lg md:text-xl max-w-2xl mx-auto">
           We would love to hear from you! If you have any questions, comments,
           or inquiries, please don&apos;t hesitate to get in touch with us. Our
           team is here to assist you in any way we can.
         </p>
       </div>
 
-      <div className="md:flex gap-5 md:mt-10 md:w-[70%] mx-auto">
-        <div className="basis-1/2">
-          <h2 className="text-center text-xl md:text-3xl py-2 font-semibold">
-            Get in Touch
-          </h2>
-          <p className="leading-relaxed  md:text-base ">
-            For general inquiries, partnerships, or any other matter, please use
-            the contact form below. We&apos;ll respond as soon as possible.
-          </p>
+      <div className="md:flex gap-8 md:w-[80%] mx-auto">
+        <div className="basis-1/2 space-y-8 animate-fadeIn">
+          <div className="p-8 rounded-xl border bg-card text-card-foreground shadow">
+            <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-primary">
+              Contact Information
+            </h2>
+            <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
+              For general inquiries, partnerships, or any other matter, please
+              use the contact form or reach out to us directly.
+            </p>
 
-          <div className="flex items-center gap-4 ml-6 md:ml-10 my-3">
-            <i className="ri-phone-fill text-primary text-2xl md:text-3xl"></i>
-            <div>
-              <h1 className=" text-lg md:text-base ">Phone Numbers</h1>
-              <p className="leading-relaxed  md:text-base ">+251911111111</p>
-              <p className="leading-relaxed  md:text-base ">+251911111111</p>
+            <div className="space-y-6">
+              <div className="flex items-center gap-4">
+                <div className="bg-primary/10 px-3 py-2 rounded-full">
+                  <i className="ri-phone-fill text-primary text-xl"></i>
+                </div>
+                <div>
+                  <h3 className="text-lg font-semibold mb-1">Phone Numbers</h3>
+                  <p className="text-gray-600 dark:text-gray-300">
+                    +1 (240) 351-5163
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-4">
+                <div className="bg-primary/10 px-3 py-2  rounded-full">
+                  <i className="ri-mail-fill text-primary text-xl"></i>
+                </div>
+                <div>
+                  <h3 className="text-lg font-semibold mb-1">Email Address</h3>
+                  <p className="text-gray-600 dark:text-gray-300">
+                    support@elabem.com
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
-          <div className="flex items-center gap-4 ml-6 md:ml-10 my-3">
-            <i className="ri-mail-fill text-primary text-2xl md:text-3xl"></i>
 
-            <div>
-              <p className=" text-lg md:text-base ">Email Address</p>
-              <p className="leading-relaxed  md:text-base ">
-                support@elabem.com
-              </p>
-            </div>
+          <div className="p-8 rounded-xl border bg-card text-card-foreground shadow">
+            <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-primary">
+              Follow Us
+            </h2>
+            <SocialMedia />
           </div>
-          <SocialMedia />
         </div>
-        <Card className="basis-1/2 max-w-md my-2">
+
+        <Card className="basis-1/2 p-6 shadow-lg mt-8 md:mt-0 animate-fadeInRight">
           <ContactUs />
         </Card>
       </div>

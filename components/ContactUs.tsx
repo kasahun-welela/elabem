@@ -71,7 +71,7 @@ export function ContactUs() {
               <FormControl>
                 <Input
                   placeholder="Please enter Full name"
-                  className="placeholder:text-xs"
+                  className="placeholder:text-xs h-12 px-4 text-base"
                   {...field}
                 />
               </FormControl>
@@ -88,7 +88,7 @@ export function ContactUs() {
               <FormControl>
                 <Input
                   placeholder="Please enter your email"
-                  className="placeholder:text-xs"
+                  className="h-12 px-4 text-base "
                   {...field}
                 />
               </FormControl>
@@ -105,7 +105,7 @@ export function ContactUs() {
               <FormControl>
                 <Input
                   placeholder="Please enter phone number"
-                  className="placeholder:text-xs"
+                  className="h-12 px-4 text-base "
                   {...field}
                 />
               </FormControl>
@@ -122,7 +122,7 @@ export function ContactUs() {
               <FormControl>
                 <Textarea
                   placeholder="Type your message here."
-                  className="placeholder:text-xs"
+                  className="h-24 px-4 text-base "
                   {...field}
                 />
               </FormControl>
@@ -130,7 +130,7 @@ export function ContactUs() {
             </FormItem>
           )}
         />
-        <Button type="submit" className="w-full">
+        <Button type="submit" className="w-full h-12">
           {isLoading ? "Loading ..." : "Submit"}
         </Button>
       </form>

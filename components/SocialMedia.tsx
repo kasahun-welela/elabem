@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function SocialMedia() {
   return (
-    <div className="flex gap-3 justify-center items-center py-3 text-gray-800">
+    <div className="flex gap-3  items-center py-3 text-gray-800">
       <Link href=" https://t.me/elabemconsultancy" target="_blank">
         <i className="ri-telegram-2-fill text-2xl bg-gray-200 rounded-full py-2 px-2 hover:bg-primary hover:text-white"></i>
       </Link>

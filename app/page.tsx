@@ -1,5 +1,5 @@
 import Hero from "@/components/Hero";
-// import Services from "@/components/Services";
+import Services from "@/components/Services";
 import FAQ from "@/components/FAQ";
 import VideoComponent from "@/components/VideoComponent";
 import Image from "next/image";
@@ -54,7 +54,10 @@ export default function Home() {
     <>
       <Hero />
       <VideoComponent />
-      {/* <Services /> */}
+
+      <div id="services">
+        <Services />
+      </div>
 
       <section className="bg-[#3e53a2] my-6">
         <div className="md:flex justify-between items-center w-[90%] mx-auto">
@@ -74,9 +77,9 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="w-[90%] mx-auto my-6">
-        <div className="text-center mb-2">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-primary relative inline-block text-center">
+      <section className="w-[90%] mx-auto my-12">
+        <div className="text-center mb-8">
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-primary relative inline-block">
             How we work
             <span className="absolute -bottom-2 left-0 w-full h-1 bg-primary/30"></span>
           </h1>
@@ -86,16 +89,18 @@ export default function Home() {
           {workList.map((steps) => (
             <div
               key={steps.title}
-              className="rounded-xl border bg-white dark:bg-slate-950  text-card-foreground shadow-sm hover:shadow flex items-center px-3 py-4 gap-3 "
+              className="rounded-xl border bg-white dark:bg-slate-950 text-card-foreground shadow-sm hover:shadow-md transition-all duration-300 flex items-center px-4 py-5 gap-4"
             >
-              <p className="text-white bg-[#7bbacc] py-2 px-4 rounded-full">
+              <p className="text-white bg-primary/80 py-2 px-4 rounded-full text-lg font-semibold min-w-[40px] text-center">
                 {steps.order}
               </p>
               <div>
-                <h2 className="font-semibold leading-none tracking-wider pb-2">
+                <h2 className="font-semibold text-lg leading-none tracking-wide pb-2 text-primary">
                   {steps.title}
                 </h2>
-                <p className="text-sm ">{steps.description}</p>
+                <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+                  {steps.description}
+                </p>
               </div>
             </div>
           ))}

@@ -35,7 +35,7 @@ export default function FAQ() {
     },
   ];
   return (
-    <div className="py-16 bg-gray-50 dark:bg-slate-900">
+    <div className="py-16 ">
       <div className="w-[90%] md:w-[50%] mx-auto">
         <div className="text-center mb-12">
           <h1 className="text-4xl md:text-5xl font-bold mb-6 text-primary relative inline-block text-center">

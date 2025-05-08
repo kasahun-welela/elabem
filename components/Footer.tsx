@@ -3,7 +3,7 @@ import SocialMedia from "./SocialMedia";
 
 export default function Footer() {
   return (
-    <div className="bg-slate-950 text-gray-400 py-6 mt-5">
+    <div className="bg-slate-900 text-gray-400 py-6 mt-5">
       <div className="grid grid-cols-2 md:grid-cols-4 w-[90%] md:w-[50%] mx-auto py-3">
         <div className="leading-8">
           <h2 className="text-xl font-semibold text-white py-2">Quick Links</h2>
@@ -14,17 +14,17 @@ export default function Footer() {
               </Link>
             </li>
             <li>
-              <Link href="/" className="hover:text-white">
+              <Link href="/about" className="hover:text-white">
                 About
               </Link>
             </li>
             <li>
-              <Link href="/" className="hover:text-white">
+              <Link href="/contact-us" className="hover:text-white">
                 Contact Us
               </Link>
             </li>
             <li>
-              <Link href="/" className="hover:text-white">
+              <Link href="/scholarship" className="hover:text-white">
                 Scholarship
               </Link>
             </li>
@@ -36,7 +36,7 @@ export default function Footer() {
           <ul className="ml-2">
             <li>
               {" "}
-              <Link href="/" className="hover:text-white">
+              <Link href="/faq" className="hover:text-white">
                 FAQ
               </Link>
             </li>
