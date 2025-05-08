@@ -84,12 +84,12 @@ function NavBar() {
             </li>
             <li>
               <Link
-                href="/scholarship"
+                href="/#services"
                 className={`${
-                  path === "/scholarship" ? "text-primary font-bold" : ""
+                  path === "/#services" ? "text-primary font-bold" : ""
                 } hover:font-semibold hover:text-primary`}
               >
-                Scholarship
+                Services
               </Link>
             </li>
             <li>
@@ -191,14 +191,12 @@ function NavBar() {
                 <li>
                   <Link
                     className={`${
-                      path === "/scholarship"
-                        ? "text-primary font-semibold"
-                        : ""
+                      path === "/#services" ? "text-primary font-semibold" : ""
                     } hover:text-primary`}
-                    href="/scholarship"
+                    href="/#services"
                     onClick={closeMenu}
                   >
-                    Scholarship
+                    Services
                   </Link>
                 </li>
                 <li>
