@@ -5,7 +5,7 @@ import { Card } from "@/components/ui/card";
 export default function page() {
   return (
     <div className="w-[90%] mx-auto mt-24 py-12">
-      <div className="text-center mb-12">
+      <div className="text-center mb-12 animate-fadeIn">
         <h1 className="text-4xl md:text-5xl font-bold mb-6 text-primary relative inline-block">
           Get in touch with us
           <span className="absolute -bottom-2 left-0 w-full h-1 bg-primary/30"></span>
@@ -18,8 +18,8 @@ export default function page() {
       </div>
 
       <div className="md:flex gap-8 md:w-[80%] mx-auto">
-        <div className="basis-1/2 space-y-8">
-          <div className="bg-white dark:bg-slate-950 p-8 rounded-lg shadow-sm">
+        <div className="basis-1/2 space-y-8 animate-fadeIn">
+          <div className="p-8 rounded-xl border bg-card text-card-foreground shadow">
             <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-primary">
               Contact Information
             </h2>
@@ -55,7 +55,7 @@ export default function page() {
             </div>
           </div>
 
-          <div className="mt-8 bg-white dark:bg-slate-950 p-8 rounded-lg shadow-sm">
+          <div className="p-8 rounded-xl border bg-card text-card-foreground shadow">
             <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-primary">
               Follow Us
             </h2>
@@ -63,7 +63,7 @@ export default function page() {
           </div>
         </div>
 
-        <Card className="basis-1/2 p-6 shadow-lg mt-8 md:mt-0 ">
+        <Card className="basis-1/2 p-6 shadow-lg mt-8 md:mt-0 animate-fadeInRight">
           <ContactUs />
         </Card>
       </div>

@@ -39,12 +39,13 @@ export default function RootLayout({
         <link rel="icon" type="image/png" sizes="32x32" href="/logo1.png" />
       </head>
       <body
-        className={`${roboto.variable} bg-muted dark:bg-gray-900 font-roboto tracking-wide antialiased`}
+        // bg-muted dark:bg-gray-900
+        className={`${roboto.variable} font-roboto tracking-wide antialiased`}
       >
         {" "}
         <ThemeProvider
           attribute="class"
-          defaultTheme="system"
+          defaultTheme="dark"
           enableSystem
           disableTransitionOnChange
         >
