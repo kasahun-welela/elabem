@@ -24,7 +24,7 @@ export default function FAQ() {
       id: 3,
       question: "3. Is the first consultation really free?",
       answer:
-        "<b>Yes</b>, the first consultation is completely free. We believe in providing a no-obligation opportunity for students to discuss their goals and explore their options without any commitment.",
+        "Yes, the first consultation is completely free. We believe in providing a no-obligation opportunity for students to discuss their goals and explore their options without any commitment.",
     },
     {
       id: 4,
