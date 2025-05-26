@@ -1,6 +1,4 @@
 import Link from "next/link";
-import { text } from "stream/consumers";
-// import SocialMedia from "./SocialMedia";
 
 export default function Footer() {
   const links = {
