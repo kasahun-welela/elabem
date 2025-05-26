@@ -34,7 +34,7 @@ export default function Hero() {
         </div>
 
         <div className="relative aspect-square w-full max-w-[600px] mx-auto animate-fadeInRight   ">
-          <div className="absolute inset-0 bg-primary rounded-full overflow-hidden border-2 border-primary ">
+          <div className="absolute inset-0 bg-primary rounded overflow-hidden border-2 border-primary ">
             <Image
               src={students}
               alt="Hero Image"

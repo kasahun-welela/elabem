@@ -25,7 +25,7 @@ export default function VideoComponent() {
       <div className="relative">
         <iframe
           className="w-full h-64 md:w-[800px] md:h-[450px] mx-auto rounded-lg shadow-lg transition-transform duration-300 hover:scale-[1.02]"
-          src="https://www.youtube.com/embed/Cfkg_UeiKlo"
+          src="https://www.youtube.com/embed/FaQ0Ct6cEU0"
           title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
@@ -35,7 +35,7 @@ export default function VideoComponent() {
       </div>
 
       <div className="mt-12 text-center">
-        <div className="inline-flex items-center gap-4 text-gray-600">
+        <div className="inline-flex items-center gap-4 text-gray-600 dark:text-gray-400">
           <div className="flex items-center gap-2">
             <svg
               className="w-5 h-5 text-primary"
